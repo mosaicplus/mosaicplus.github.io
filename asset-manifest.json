@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/2022-mockup-branch/static/css/main.c93b66ab.css",
+    "main.js": "/2022-mockup-branch/static/js/main.e7bf4006.js",
+    "static/js/787.fab29141.chunk.js": "/2022-mockup-branch/static/js/787.fab29141.chunk.js",
+    "static/media/timeline3.jpg": "/2022-mockup-branch/static/media/timeline3.9263201bf5bbf5022b28.jpg",
+    "static/media/pre-o.jpg": "/2022-mockup-branch/static/media/pre-o.b8e58b841e5be432ff5a.jpg",
+    "static/media/erick.png": "/2022-mockup-branch/static/media/erick.3da26fb805e3f4b072a6.png",
+    "static/media/mentor.jpg": "/2022-mockup-branch/static/media/mentor.e92c1612b6eabdd061f0.jpg",
+    "static/media/timeline4.jpg": "/2022-mockup-branch/static/media/timeline4.cdd9c114d3e02aff1bf8.jpg",
+    "static/media/timeline2.jpg": "/2022-mockup-branch/static/media/timeline2.6676d498b90109e14c6e.jpg",
+    "static/media/timeline1.jpg": "/2022-mockup-branch/static/media/timeline1.cec80174bb9531a6a2d3.jpg",
+    "static/media/robert-bush.jpeg": "/2022-mockup-branch/static/media/robert-bush.d6b50c5ffe07c07af9ab.jpeg",
+    "static/media/arrington-harper.jpeg": "/2022-mockup-branch/static/media/arrington-harper.20819fd5c97f71739b7f.jpeg",
+    "static/media/paloma-salseda.jpeg": "/2022-mockup-branch/static/media/paloma-salseda.b820a4504fc296e119e8.jpeg",
+    "static/media/mosaicLogo.png": "/2022-mockup-branch/static/media/mosaicLogo.370be62d104406d2561f.png",
+    "static/media/ABCDiatype-Bold-Trial.woff": "/2022-mockup-branch/static/media/ABCDiatype-Bold-Trial.92d33d9b7de41c6ea290.woff",
+    "static/media/mark-mapeke.jpeg": "/2022-mockup-branch/static/media/mark-mapeke.3f3c82fab768e5c77b0d.jpeg",
+    "static/media/josue-cruz.jpeg": "/2022-mockup-branch/static/media/josue-cruz.0282889612087f39722a.jpeg",
+    "static/media/serena.jpeg": "/2022-mockup-branch/static/media/serena.83bc3e9bc9bb7851f080.jpeg",
+    "static/media/red-square.png": "/2022-mockup-branch/static/media/red-square.67d67f16df9e8e5ef472.png",
+    "static/media/Author-Semibold.woff": "/2022-mockup-branch/static/media/Author-Semibold.74f71221a58f2acbfed8.woff",
+    "static/media/F37HybridTrial-Regular.otf": "/2022-mockup-branch/static/media/F37HybridTrial-Regular.09e76343c17086186602.otf",
+    "index.html": "/2022-mockup-branch/index.html",
+    "main.c93b66ab.css.map": "/2022-mockup-branch/static/css/main.c93b66ab.css.map",
+    "main.e7bf4006.js.map": "/2022-mockup-branch/static/js/main.e7bf4006.js.map",
+    "787.fab29141.chunk.js.map": "/2022-mockup-branch/static/js/787.fab29141.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c93b66ab.css",
+    "static/js/main.e7bf4006.js"
+  ]
+}
