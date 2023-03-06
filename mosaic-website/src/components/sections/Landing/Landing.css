@@ -1,0 +1,64 @@
+.landing {
+  background-color: white;
+  padding-bottom: 20px;
+}
+.landing-container {
+  position: relative;
+}
+
+.hero-text {
+  /* position: sticky;
+  top: 50vh; */
+  position: absolute;
+  color: white;
+
+  z-index: 3;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  /* background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgb(35, 35, 35) 100%); */
+}
+
+.hero-subheading {
+  width: 60%;
+  margin: 0 auto;
+}
+.hero-heading h1 {
+  margin: 0px;
+  font-size: 80px;
+  /* font-family: Diatype-Bold; */
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hero-subheading p {
+  margin: 0px;
+  font-size: 35px;
+}
+
+.slide-container {
+  direction: ltr;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.each-slide ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(1, 34, 57); */
+  opacity: 0.2; /* adjust the opacity as you want */
+  background-color: #0c1c26;
+}
+
+.each-slide div {
+  height: 100vh;
+}

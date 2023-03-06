@@ -1,0 +1,89 @@
+.events {
+  background-color: white;
+  padding-bottom: 50px;
+  margin: 0px;
+  text-align: center;
+}
+
+.event {
+display: inline-block;
+  margin: auto;
+  max-width: 50%;
+}
+.event_item {
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+  transition: all 200ms ease;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1em;
+  margin: 10px;
+}
+
+.event_item h3 {
+    font-size: 30px;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight:  600;
+    margin:10px;
+}
+
+
+.badge {
+  display: none;
+}
+
+.cal_icon {
+  color: #e3304e;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.icon_cal {
+  height: 16px;
+  width: 16px;
+  fill: currentColor;
+  stroke: inherit;
+  pointer-events: none;
+}
+
+.clock_icon {
+  color: #e3304e;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.icon_clock {
+  height: 16px;
+  width: 16px;
+  fill: currentColor;
+  stroke: inherit;
+  pointer-events: none;
+  display: block;
+}
+.event_date {
+  margin-right: 0px;
+  padding: 0 20px;
+  margin: 0 0 8px;
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+  font-size: 20px;
+
+}
+
+.atcb-checkmark {
+  display: none !important;
+}
+
+.atcb-button {
+  box-shadow: 0 0 0 0 !important;
+  border: 0px !important;
+}
+
+.atcb-button.atcb-single:hover {
+  box-shadow: none !important;
+  margin: 0.13em !important;
+  padding: 0.65em 1em !important;
+}
