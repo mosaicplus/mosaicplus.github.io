@@ -6,7 +6,7 @@ import timeline2 from "../../../content/photos/timeline2.jpg";
 import timeline3 from "../../../content/photos/timeline3.jpg";
 import timeline4 from "../../../content/photos/timeline4.jpg";
 
-// Each timelineItem is mapped to a TimelineItem component, which is defined in TimelineItem.js. 
+// Each timelineItem is mapped to a TimelineItem component, which is defined in TimelineItem.js.
 const timelineItems = [
   {
     heading: "Spring 2015",
@@ -50,38 +50,34 @@ function AboutComponent() {
   return (
     <div className="about" id="about">
       <div className="section-intro">
-      <div className="section-header yellow-header"><h1>About Us</h1></div>
-      <div className="about-section">
-        <p className="body-text">
-          Mosaic+ is a student-run organization which advocates for
-          diversity in computer science. We strive towards an academic
-          environment receptive to underrepresented minority students
-          and faculty at Brown University. We are a group of committed
-          and creative students working together to make proactive
-          steps towards the celebration of diversity in the world of
-          technology.
-          {/* <br></br>
-          <br></br>
-          Come find us at the Mosaic+ room in CIT 209! */}
-        </p>
-      </div>
+        <div className="section-header yellow-header">
+          <h1>About Us</h1>
+        </div>
+        <div className="about-section">
+          <p className="about-text">
+            Mosaic+ is a student-run organization which advocates for
+            diversity in computer science. We strive towards an
+            academic environment receptive to underrepresented minority
+            students and faculty at Brown University. We are a group of
+            committed and creative students working together to make
+            proactive steps towards the celebration of diversity in the
+            world of technology. Come find us at the Mosaic+ room in CIT 271, Fishbowl!
+          </p>
+        </div>
       </div>
 
       <div className="timeline-section">
         <div className="timeline">
           <div className="timeline-progress">
-            <div className="timeline-progress-bar">
-            </div>
+            <div className="timeline-progress-bar"></div>
           </div>
           {timelineItems.map((item) => (
-            
-              <TimelineItem
-                heading={item.heading}
-                subheading={item.subheading}
-                body={item.body}
-                source={item.source}
-              ></TimelineItem>
-        
+            <TimelineItem
+              heading={item.heading}
+              subheading={item.subheading}
+              body={item.body}
+              source={item.source}
+            ></TimelineItem>
           ))}
         </div>
       </div>

@@ -194,12 +194,25 @@
   font-size: 18px;
 }
 
-.body-text {
+.about-text {
   text-align: left;
   font-size: 24px;
   background-color: white;
   line-height: 1.6;
+  margin: 0px;
+  padding: 0px;
 }
+
+.special-text {
+  font-weight: bold;
+  background: rgb(162,35,225);
+  background: -moz-linear-gradient(90deg, rgba(162,35,225,1) 0%, rgba(255,251,160,1) 93%);
+  background: -webkit-linear-gradient(90deg, rgba(162,35,225,1) 0%, rgba(255,251,160,1) 93%);
+  background: linear-gradient(90deg, rgba(162,35,225,1) 0%, rgba(255,251,160,1) 93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 .timeline-ending {
   background-color: white;
