@@ -6,7 +6,6 @@ function LandingComponent() {
     <div className="landing">
       <div className="landing-container">
         <SlideShow />
-        
       </div>
     </div>
   );
