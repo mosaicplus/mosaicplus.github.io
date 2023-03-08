@@ -1,5 +1,10 @@
 @import url("https://use.typekit.net/hbu1pct.css");
 
+
+html,body{
+  overflow-x: hidden;
+}
+
 body {
   /* background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
   font-family: "neue-haas-grotesk-text", sans-serif;
