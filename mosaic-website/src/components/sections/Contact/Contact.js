@@ -67,6 +67,10 @@ function ContactComponent() {
           </button>
         </form>
       </div>
+
+      <div>
+        <h2 className="contact-header">Our lead team can also be reached at mosaic.plus.brown@gmail.com.</h2>
+      </div>
     </div>
   );
 }

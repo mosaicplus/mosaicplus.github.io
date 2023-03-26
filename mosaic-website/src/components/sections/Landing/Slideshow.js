@@ -28,7 +28,7 @@ const SlideShow = () => {
           <Slide {...properties}>
             <div className="each-slide">
               <div
-                style={{ backgroundImage: `url(${slideImages[0]})` }}
+                style={{ backgroundImage: `url(${slideImages[0]})`, backgroundPosition: "center" }}
               ></div>
             </div>
             <div className="each-slide">

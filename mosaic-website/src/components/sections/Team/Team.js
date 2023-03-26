@@ -37,11 +37,11 @@ const coCord2 = {
 
 const mentorCord = {
   photo: markMapeke,
-  name: "Mark Mapeke",
+  name: "Marc Mapeke",
   year: 23,
-  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
+  linkedin: "https://www.linkedin.com/in/marcmapeke",
   github: "https://github.com/eirik64",
-  email: "erick_lerena@brown.edu",
+  email: "marc_mapeke@brown.edu",
   position: "Mentorship Coordinator",
   color: "#641cb5"
 };
@@ -100,6 +100,7 @@ const branding2 = {
   position: "Branding",
   color: "#fffba0"
 };
+
 
 function mapper(item) {
   return item.map((item, index) => (

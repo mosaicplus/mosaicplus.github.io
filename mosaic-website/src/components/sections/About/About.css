@@ -43,6 +43,17 @@
   align-items: center;
 }
 
+@media screen and (max-width: 769px) {
+  .timeline {
+    max-width: 100%;
+    display: none;
+  }
+
+  .timeline-ending {
+    display: none;
+  }
+}
+
 .timeline-progress {
   position: absolute;
   z-index: -2;
@@ -159,7 +170,7 @@
 .timeline-circle {
   position: -webkit-sticky;
   position: sticky;
-  top: 49vh;
+  top: 50vh;
   height: 20px;
   /* max-height: 15px;
   max-width: 15px;
@@ -169,6 +180,12 @@
   background-color: black;
   box-shadow: 0 0 0 8px white; */
   will-change: background;
+}
+
+@media screen and (max-width: 769px) {
+  .timeline-circle {
+    display: none;
+  }
 }
 
 .timeline-header {
