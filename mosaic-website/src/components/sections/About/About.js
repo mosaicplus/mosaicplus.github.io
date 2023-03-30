@@ -10,7 +10,7 @@ import timeline4 from "../../../content/photos/timeline4.jpg";
 const timelineItems = [
   {
     heading: "Spring 2015",
-    subheading: "Our Humble beginnings",
+    subheading: "Our Humble Beginnings",
     body: `In the spring of 2015, Prof. Chad Jenkins brought thirteen
     students together to talk about underrepresentation of racial minorities
     in Computer Science. With his advising and the leadership of the first

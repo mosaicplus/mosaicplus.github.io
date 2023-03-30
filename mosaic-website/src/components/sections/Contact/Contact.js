@@ -69,7 +69,7 @@ function ContactComponent() {
       </div>
 
       <div>
-        <h2 className="contact-header">Our lead team can also be reached at mosaic.plus.brown@gmail.com.</h2>
+        <p >Our lead team can also be reached at mosaic.plus.brown@gmail.com.</p>
       </div>
     </div>
   );

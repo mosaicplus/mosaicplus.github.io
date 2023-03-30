@@ -32,6 +32,7 @@ function NavBar() {
   const [visible, setVisible] = useState(true);
   const [textColor, setTextColor] = useState("white");
   const [bgColor, setBgColor] = useState("transparent");
+  const [borderSize, setBorderSize] = useState("0px");
 
   const handleScroll = debounce(() => {
     const currentScrollPos = window.pageYOffset;
@@ -47,25 +48,23 @@ function NavBar() {
 
   const listenScrollEvent = (event) => {
     if (window.scrollY < 800) {
-      return setTextColor("white");
+      setTextColor("white");
+      setBgColor("transparent");
+      setBorderSize("0px");
+      return;
     } else if (window.scrollY > 800) {
-      return setTextColor("black");
+      setTextColor("black");
+      setBgColor("white");
+      setBorderSize("1px");
+      return;
     }
   };
 
-  const listenScrollEvent2 = (event) => {
-    if (window.scrollY < 800) {
-      return setBgColor("transparent");
-    } else if (window.scrollY > 800) {
-      return setBgColor("white");
-    }
-  };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, [prevScrollPos, visible, handleScroll]);
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -74,126 +73,160 @@ function NavBar() {
       window.removeEventListener("scroll", listenScrollEvent);
   }, []);
 
-  useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent2);
-
-    return () =>
-      window.removeEventListener("scroll", listenScrollEvent);
-  }, []);
-  
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
-    <div className="navbar">
-      <div className="navbar-fixed">
-        <div className="logo">
-          <img src={MosaicLogo} id="mosaic-logo"></img>
-        </div>
-      </div>
-      <nav
-        id="navbar"
-        className="navbar-fixed navbar-text"
+    <div className="navbar-wrapper">
+      <div
+        className="navbar"
         style={{
           backgroundColor: bgColor,
           color: textColor,
           top: visible ? "0" : "-120px",
-          left: "35%",
+          borderBottom: `${borderSize} solid #e4e4e4`,
         }}
       >
-        <button
-          onClick={() => {
-            setIsNavExpanded(!isNavExpanded);
-          }}
-        >
-          {isNavExpanded ? (
-            <MdClose
-              style={{ color: "#fff", width: "40px", height: "40px" }}
-            />
-          ) : (
-            <FiMenu
-              style={{
-                color: "#7b7b7b",
-                width: "40px",
-                height: "40px",
-              }}
-            />
-          )}
-        </button>
-        <div
-          className={
-            isNavExpanded ? "nav-items expanded" : "nav-items"
-          }
-        >
-          <ul>
-            <li>
-              <Link
-                to="events"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={500}
-              >
-                Events
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={500}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="team"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-              >
-                Team
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="transition-program"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-              >
-                Transition Program
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="mentorship"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Mentorship
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+        <div id="navbar" className="navbar-fixed">
+          <Link
+            to="landing"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="logo-link"
+          >
+            <div className="logo">
+              <img src={MosaicLogo} id="mosaic-logo"></img>
+            </div>
+          </Link>
+
+          {/* <button
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+          >
+            {isNavExpanded ? (
+              <MdClose
+                style={{
+                  color: textColor,
+                  width: "40px",
+                  height: "40px",
+                }}
+              />
+            ) : (
+              <FiMenu
+                style={{
+                  color: textColor,
+                  width: "40px",
+                  height: "40px",
+                }}
+              />
+            )}
+          </button> */}
+
+          <div className="mobile-menu">
+          <Hamburger toggled={isNavExpanded} toggle={setIsNavExpanded} />
+          </div>
+          <nav
+            className={
+              isNavExpanded ? "nav-items expanded" : "nav-items"
+            }
+            style={{
+              backgroundColor: bgColor,
+              top: isNavExpanded? "0" : "-100%",
+              transitionDelay: isNavExpanded? "0s" : "0s",
+            }}
+            
+          >
+            <ul className="nav-menu">
+              <li className="nav-menu-item">
+                <Link
+                  to="events"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
+                >
+                  Events
+                </Link>
+              </li>
+              <li className="nav-menu-item">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
+                >
+                  About
+                </Link>
+              </li>
+              <li className="nav-menu-item">
+                <Link
+                  to="team"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
+                >
+                  Team
+                </Link>
+              </li>
+              <li className="nav-menu-item">
+                <Link
+                  to="transition-program"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
+                >
+                  Transition Program
+                </Link>
+              </li>
+              <li className="nav-menu-item">
+                <Link
+                  to="mentorship"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
+                >
+                  Mentorship
+                </Link>
+              </li>
+              <li className="nav-menu-item">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }

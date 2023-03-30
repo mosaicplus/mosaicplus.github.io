@@ -20,7 +20,7 @@
 }
 
 .timeline {
-  max-width: 1120px;
+  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -188,13 +188,13 @@
   }
 }
 
+/* This should follow the section headers??? */
 .timeline-header {
   position: -webkit-sticky;
   position: sticky;
   top: 50vh;
   color: black;
-  font-size: 48px;
-  line-height: 1.2;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -208,7 +208,7 @@
   text-align: left;
 }
 .timeline-body p {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .about-text {
