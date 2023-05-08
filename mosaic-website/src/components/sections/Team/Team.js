@@ -8,96 +8,109 @@ import serena from "../../../content/graphics/serena.jpeg";
 import paloma from "../../../content/graphics/paloma-salseda.jpeg";
 import josue from "../../../content/graphics/josue-cruz.jpeg";
 import TeamMember from "./TeamMember";
+
+import alexCueva from "../../../content/graphics/alex_cueva.jpg";
+import bryceSaddler from "../../../content/graphics/bryce_saddler.jpg";
+import kamrynWalker from "../../../content/graphics/kamryn_walker.JPG";
+import nicoleSanchez from "../../../content/graphics/nicole_sanchez.jpg";
+import jordanStornelli from "../../../content/graphics/jordan_stornelli.jpg";
+import sydneyMeza from "../../../content/graphics/sydney_meza.jpg";
+import joshuaOkwaning from "../../../content/graphics/no_photo.jpg";
+import madelynMoore from "../../../content/graphics/no_photo.jpg";
+
+
+
 import "./Team.css";
+
 
 //each team member has a photo,
 //name, year, position linkedin, github, email
 
 const coCord1 = {
-  photo: redSquare2,
-  name: "Erick Lerena",
-  year: 23,
+  photo: alexCueva,
+  name: "Alexander Cueva",
+  year: 26,
   linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
   github: "https://github.com/eirik64",
-  email: "erick_lerena@brown.edu",
+  email: "alexander_cueva@brown.edu",
   position: "Co-Coordinator",
   color: "#ed3f5c"
 };
 
 const coCord2 = {
-  photo: redSquare,
-  name: "Fernando Cisneros",
-  year: 23,
+  photo: madelynMoore,
+  name: "Madelyn Moore",
+  year: 26,
   linkedin: "https://www.linkedin.com/in/fernando-cisneros-8661a81a9/",
   github: "",
-  email: "fernando_cisneros@brown.edu",
+  email: "madelyn_moore@brown.edu",
   position: "Co-Coordinator",
   color: "#ed3f5c"
 };
 
 const mentorCord = {
-  photo: markMapeke,
-  name: "Mark Mapeke",
-  year: 23,
+  photo: bryceSaddler,
+  name: "Bryce Saddler",
+  year: 25,
   linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
   github: "https://github.com/eirik64",
-  email: "erick_lerena@brown.edu",
-  position: "Mentorship Coordinator",
+  email: "bryce_sadler@brown.edu",
+  position: "Mentorship Co-Coordinator",
   color: "#641cb5"
 };
 
 const communityDev1 = {
-  photo: paloma,
-  name: "Paloma Salseda",
-  year: 23,
-  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
+  photo: nicoleSanchez,
+  name: "Nicole Sanchez-Soto",
+  year: 26,
+  linkedin: "https://www.linkedin.com/mwlite/in/nicole-sanchez-soto-365a34252",
   github: "https://github.com/eirik64",
-  email: "erick_lerena@brown.edu",
-  position: "Community Development",
+  email: "nicole_sanchez-soto@brown.edu",
+  position: "Mentorship Co-Coordinator",
   color: "#acd7dc"
 };
 
 const communityDev2 = {
-  photo: robertBush,
-  name: "Robert Bush",
-  year: 23,
+  photo: joshuaOkwaning,
+  name: "Joshua Okwaning",
+  year: 26,
   linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
   github: "https://github.com/eirik64",
-  email: "erick_lerena@brown.edu",
+  email: "joshua_okwaning@brown.edu",
   position: "Community Development",
   color: "#acd7dc"
 };
 
 const communityDev3 = {
-  photo: arrington,
-  name: "Arrington Harper",
-  year: 23,
+  photo: kamrynWalker,
+  name: "Kamryn Walker",
+  year: 26,
   linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
   github: "https://github.com/eirik64",
-  email: "erick_lerena@brown.edu",
+  email: "kamryn_walker@brown.edu",
   position: "Community Development",
   color: "#acd7dc"
 };
 
 const branding1 = {
-  photo: josue,
-  name: "Josue Cruz",
-  year: 24,
+  photo: jordanStornelli,
+  name: "Jordan Stornelli",
+  year: 26,
   linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
   github: "https://github.com/eirik64",
-  email: "erick_lerena@brown.edu",
+  email: "jordan_stornelli@brown.edu",
   position: "Branding",
   color: "#fffba0"
 };
 
 const branding2 = {
-  photo: serena,
-  name: "Serena Pulopot",
-  year: 23,
+  photo: sydneyMeza,
+  name: "Sydney Meza",
+  year: 26,
   linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
   github: "https://github.com/eirik64",
-  email: "erick_lerena@brown.edu",
-  position: "Branding",
+  email: "sydney_meza@brown.edu",
+  position: "Website Development",
   color: "#fffba0"
 };
 

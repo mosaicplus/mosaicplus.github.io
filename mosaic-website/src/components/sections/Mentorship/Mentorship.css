@@ -25,11 +25,12 @@
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 600;
   margin: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .mentor-column p {
-    font-size: 24px;
+    font-size: 21px;
+    margin: 15px;
 }
 
 
