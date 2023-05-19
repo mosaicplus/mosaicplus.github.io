@@ -5,6 +5,8 @@
   right: 0;
   bottom: auto;
   z-index: 9999;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .navbar {
@@ -112,8 +114,12 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
 
+  .navbar-wrapper {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
   .nav-items ul {
     /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
     position: absolute;

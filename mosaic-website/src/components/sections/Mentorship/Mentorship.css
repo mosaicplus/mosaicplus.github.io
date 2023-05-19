@@ -19,12 +19,14 @@
   text-align: left;
 }
 
+/* I would want to keep the tp coloumns and the mentor coloumns to always have the same styling */
 .mentor-column h3 {
   color: #18b0c8;
   font-size: 30px;
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 600;
-  margin: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .mentor-column p {
