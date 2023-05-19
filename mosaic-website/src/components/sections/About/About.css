@@ -54,10 +54,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> sydneys-branch
 .timeline-progress {
   position: absolute;
   z-index: -2;
@@ -192,7 +188,6 @@
   }
 }
 
-/* This should follow the section headers??? */
 .timeline-header {
   position: -webkit-sticky;
   position: sticky;
