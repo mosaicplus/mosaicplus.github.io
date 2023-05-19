@@ -5,8 +5,11 @@
   right: 0;
   bottom: auto;
   z-index: 9999;
+<<<<<<< HEAD
   margin-left: 10%;
   margin-right: 10%;
+=======
+>>>>>>> sydneys-branch
 }
 
 .navbar {
