@@ -40,7 +40,7 @@ const timelineItems = [
     heading: "Summer 2016",
     subheading: "Our First Transition Program",
     body: `Just over a year after the Mosaic+ team came to be, we held our 
-    very first transition program, welcoming underrepresented racial minority 
+    very first transition program, welcoming the first cohort of 
     students into Brown CS and into the Mosaic+ family!`,
     source: timeline4,
   },

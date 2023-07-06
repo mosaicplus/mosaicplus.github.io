@@ -17,10 +17,10 @@ function MentorshipComponent() {
         <div className="mentor-column">
           <p className="body-text">
             The Mosaic+ Mentorship program fosters community for
-            underrepresented minority students through structured peer
+            underrepresented students through structured peer
             support. Through interactive workshops, mentor-mentee
             relationships, and group study programs, Mosaic+ ensures
-            minority student s are provided the resources and networks
+            that students are provided the resources and networks
             necessary to make the most of their academic experience
             within Brown’s computer science department.
           </p>

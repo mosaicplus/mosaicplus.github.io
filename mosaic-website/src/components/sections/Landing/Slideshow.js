@@ -54,8 +54,8 @@ const SlideShow = () => {
               <span className="yellow-highlight">community</span>,
               inspire <span className="red-highlight">innovation</span>
               , and provide{" "}
-              <span className="purple-highlight">opportunity</span> to
-              underrepresented racial minority students in computer
+              <span className="purple-highlight">opportunity</span> and
+              equity to underrepresented minority students in computer
               science.
             </p>
           </div>
@@ -64,5 +64,6 @@ const SlideShow = () => {
     </div>
   );
 };
+
 
 export default SlideShow;
