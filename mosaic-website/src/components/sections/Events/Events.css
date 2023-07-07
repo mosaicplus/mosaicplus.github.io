@@ -87,3 +87,9 @@ display: inline-block;
   margin: 0.13em !important;
   padding: 0.65em 1em !important;
 }
+
+
+.no-events {
+  font-size: 1.25rem;
+  margin: 0;
+}

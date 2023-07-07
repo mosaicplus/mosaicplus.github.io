@@ -10,7 +10,6 @@
 }
 
 .navbar {
-  padding: 0px 20px;
   font-size: 20px;
   width: 100%;
 }
@@ -77,6 +76,7 @@
   flex-grow: 1;
   text-align: center;
   margin-right: 15px;
+  cursor: pointer;
 }
 .nav-items li a {
   text-decoration: none;

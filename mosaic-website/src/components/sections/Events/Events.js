@@ -39,10 +39,12 @@ function EventsComponent() {
       process.env.REACT_APP_CALENDAR_ID,
       process.env.REACT_APP_GOOGLE_API_KEY
     );
+
     setEvents(cal_events);
   }, []);
 
   return (
+    
     <div className="events">
       <div className="section-header blue-header">
         <h1> Upcoming Events</h1>
@@ -54,6 +56,12 @@ function EventsComponent() {
             <EventItemComponent event={event}></EventItemComponent>
           </div>
         ))}
+
+        {events?.length == 0 &&
+          <p className="no-events">
+            Come back for future events!
+          </p>
+        }
       </div>
     </div>
   );

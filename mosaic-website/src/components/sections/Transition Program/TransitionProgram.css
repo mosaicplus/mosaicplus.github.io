@@ -21,14 +21,10 @@
   font-size: 30px;
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 600;
-  margin: 10px;
+  margin: 10px 0px;
 }
 .asterik-text {
   font-size: 12px !important;
-}
-
-.tp-column p {
-  font-size: 21px;
 }
 
 .tp-column h3 {
@@ -88,4 +84,8 @@
   .tp-photo-cover {
     min-height: 300px;
   }
+}
+
+.tp-column ul li {
+  padding-bottom: 10px;
 }

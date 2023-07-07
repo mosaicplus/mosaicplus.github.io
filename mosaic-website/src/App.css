@@ -24,6 +24,7 @@ body {
 .body-text {
   background-color: white;
   margin: 0;
+  font-size: 1.25rem;
 }
 
 .main-text {
@@ -99,13 +100,6 @@ ul.indicators {
 }
 
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .text-column {
-    width: 100%;
-  }
-}
-
 .poly {
   box-shadow: 10px 5px 5px red;
 }
@@ -147,10 +141,14 @@ svg {
   width: 200px;
 }
 
+
+
 .main-text {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
+
 .team-member-info ul li {
   display: inline-block;
   padding: 10px;
@@ -278,3 +276,63 @@ h5 {
   text-align: center;
 }
 
+
+
+@media screen and (max-width: 600px) {
+  .body-text {
+    font-size: 1rem;
+  }
+
+  .text-column {
+    width: 100%;
+  }
+
+  .main-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .section-header h1{
+    font-size: 1.75rem;
+  }
+
+  .team-member-item h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .team-member-item p {
+    font-size: 1rem !important;
+  }
+
+  .tp-column h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .mentor-column h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .mentor-column p {
+    font-size: 1rem !important;
+  }
+
+  .about-text {
+    font-size: 1rem !important;
+  }
+
+  .form-control {
+    font-size: 1rem !important;
+  }
+
+  .contact-form {
+    width: 100% !important; 
+  }
+
+  .submit-button {
+    font-size: 1.25rem !important;
+  }
+
+  .hero-subheading {
+    width: 80% !important;
+  }
+}

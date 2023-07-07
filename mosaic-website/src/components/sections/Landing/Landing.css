@@ -6,6 +6,11 @@
   position: relative;
 }
 
+.heading-text {
+  background: linear-gradient(90deg, rgba(255,251,160,1) 0%, rgba(171,57,228,1) 97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 
@@ -52,7 +57,7 @@
 
   .hero-subheading p {
     margin: 0px;
-    font-size: 25px;
+    font-size: 1.5rem;
   }
 }
 
