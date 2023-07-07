@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, {useRef} from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 
@@ -19,7 +19,7 @@ function ContactComponent() {
       )
       .then(
         (result) => {
-          setFormStatus("Success");
+          setFormStatus("Sent!");
           e.target.reset();
           setTimeout(function () {
             //your code to be executed after 1 second
@@ -28,6 +28,8 @@ function ContactComponent() {
         },
         (error) => {
           console.log(error.text);
+          setFormStatus("Error :(");
+
         }
       );
   };
@@ -69,7 +71,7 @@ function ContactComponent() {
       </div>
 
       <div>
-        <p>Our lead team can also be reached at mosaic.plus.brown@gmail.com.</p>
+        <p>Our lead team can also be reached at mosaic.plus.brown@gmail.com</p>
       </div>
     </div>
   );

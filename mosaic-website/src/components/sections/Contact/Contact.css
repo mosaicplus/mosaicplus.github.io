@@ -80,7 +80,7 @@ input[type="text"] {
 .submit-button {
   font-size: 24px;
   font-weight: 600;
-  border-radius: 50px;
+  border-radius: ;
   border: none;
   cursor: pointer;
   font-family: "neue-haas-grotesk-display", sans-serif;
@@ -88,10 +88,12 @@ input[type="text"] {
   background-color: white;
   color: #333;
   transition: all 300ms ease;
-  border: 5px solid #ef566f;
+  border: 1px solid #ef566f;
 }
 
 .submit-button:hover {
     background-color: #ef566f;
     color: white
 }
+
+

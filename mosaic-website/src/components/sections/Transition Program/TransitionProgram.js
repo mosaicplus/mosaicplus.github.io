@@ -27,7 +27,6 @@ function TransitionProgramComponent() {
         </div>
         <div className="tp-column tp-photo-cover">
           <div className="tp-photo-container">
-            {/* <img src={tpPhoto} className="tp-photo"></img> */}
           </div>
         </div>
       </div>
@@ -40,18 +39,16 @@ function TransitionProgramComponent() {
             will learn about:
           </p>
           <ul>
-            <li>
-              Computer science as a field
-            </li>
+            <li>Computer science as a field</li>
             <li>Computer science at Brown University</li>
             <li>The computer science industry</li>
             <li>Coding basics</li>
-            <li>What to expect in their first 
-             semester as a computer science student
+            <li>
+              What to expect in their first semester as a computer
+              science student
             </li>
           </ul>
         </div>
-
         <div className="tp-column">
           <h3>Where and when will this program take place?</h3>
           {/* <p>
@@ -61,20 +58,27 @@ function TransitionProgramComponent() {
             pre-orientation camp.
           </p>   */}
           <p>
-            For 2023, this program will run for 3-weeks online from Monday July 31 
-            until Friday August 18, and 4-days in-person from Tuesday August 22 until 
-            Friday August 25. Eligible students will participate in online and in-person 
-            CS lessons and in-person community-building activities, workshops and first-year
-            info-sessions. Students admitted to the program are eligible to move into their 
-            fall dorm room early on Monday August 21.
+            For 2023, this program will run for 3 weeks online from
+            Monday July 31 until Friday August 18, and 4-days in-person
+            from Tuesday August 22 until Friday August 25. Eligible
+            students will participate in online and in-person CS
+            lessons and in-person community-building activities,
+            workshops and first-year info-sessions. Students admitted
+            to the program are eligible to move into their fall dorm
+            room early on Monday August 21.
           </p>
         </div>
 
         <div className="tp-column">
           <h3>How to apply:</h3>
           <p>
-          The Program Application is now open. Applications are due by July 11, 2023.
-          Application URL: https://brown.co1.qualtrics.com/jfe/form/SV_1GMS0qSBk9VbPoi
+            The Program Application is now open. Applications are due
+            by July 11, 2023. Application URL:{" "}
+            <span>
+              <a href="https://brown.co1.qualtrics.com/jfe/form/SV_1GMS0qSBk9VbPoi">
+                https://brown.co1.qualtrics.com/jfe/form/SV_1GMS0qSBk9VbPoi
+              </a>
+            </span>
           </p>
         </div>
       </div>

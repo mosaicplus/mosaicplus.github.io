@@ -1,12 +1,4 @@
 import React, { useState } from "react";
-import redSquare from "../../../content/graphics/red-square.png";
-import robertBush from "../../../content/graphics/robert-bush.jpeg";
-import markMapeke from "../../../content/graphics/mark-mapeke.jpeg";
-import arrington from "../../../content/graphics/arrington-harper.jpeg";
-import redSquare2 from "../../../content/graphics/erick.png";
-import serena from "../../../content/graphics/serena.jpeg";
-import paloma from "../../../content/graphics/paloma-salseda.jpeg";
-import josue from "../../../content/graphics/josue-cruz.jpeg";
 import TeamMember from "./TeamMember";
 
 import alexCueva from "../../../content/graphics/alex_cueva.jpg";
@@ -18,10 +10,7 @@ import sydneyMeza from "../../../content/graphics/sydney_meza.jpg";
 import joshuaOkwaning from "../../../content/graphics/no_photo.jpg";
 import madelynMoore from "../../../content/graphics/no_photo.jpg";
 
-
-
 import "./Team.css";
-
 
 //each team member has a photo,
 //name, year, position linkedin, github, email
@@ -30,8 +19,8 @@ const coCord1 = {
   photo: alexCueva,
   name: "Alexander Cueva",
   year: 26,
-  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
-  github: "https://github.com/eirik64",
+  linkedin: "https://www.linkedin.com/in/alexander-cueva-94b381251/",
+  github: "",
   email: "alexander_cueva@brown.edu",
   position: "Co-Coordinator",
   color: "#ed3f5c"
@@ -41,7 +30,7 @@ const coCord2 = {
   photo: madelynMoore,
   name: "Madelyn Moore",
   year: 26,
-  linkedin: "https://www.linkedin.com/in/fernando-cisneros-8661a81a9/",
+  linkedin: "",
   github: "",
   email: "madelyn_moore@brown.edu",
   position: "Co-Coordinator",
@@ -52,8 +41,8 @@ const mentorCord = {
   photo: bryceSaddler,
   name: "Bryce Saddler",
   year: 25,
-  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
-  github: "https://github.com/eirik64",
+  linkedin: "https://www.linkedin.com/in/bryce-saddler-a95a27210/",
+  github: "",
   email: "bryce_sadler@brown.edu",
   position: "Mentorship Co-Coordinator",
   color: "#641cb5"
@@ -64,7 +53,7 @@ const communityDev1 = {
   name: "Nicole Sanchez-Soto",
   year: 26,
   linkedin: "https://www.linkedin.com/mwlite/in/nicole-sanchez-soto-365a34252",
-  github: "https://github.com/eirik64",
+  github: "",
   email: "nicole_sanchez-soto@brown.edu",
   position: "Mentorship Co-Coordinator",
   color: "#acd7dc"
@@ -74,8 +63,8 @@ const communityDev2 = {
   photo: joshuaOkwaning,
   name: "Joshua Okwaning",
   year: 26,
-  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
-  github: "https://github.com/eirik64",
+  linkedin: "",
+  github: "",
   email: "joshua_okwaning@brown.edu",
   position: "Community Development",
   color: "#acd7dc"
@@ -85,8 +74,8 @@ const communityDev3 = {
   photo: kamrynWalker,
   name: "Kamryn Walker",
   year: 26,
-  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
-  github: "https://github.com/eirik64",
+  linkedin: "https://www.linkedin.com/in/kamryn-walker/",
+  github: "",
   email: "kamryn_walker@brown.edu",
   position: "Community Development",
   color: "#acd7dc"
@@ -96,8 +85,8 @@ const branding1 = {
   photo: jordanStornelli,
   name: "Jordan Stornelli",
   year: 26,
-  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
-  github: "https://github.com/eirik64",
+  linkedin: "",
+  github: "",
   email: "jordan_stornelli@brown.edu",
   position: "Branding",
   color: "#fffba0"
@@ -107,8 +96,8 @@ const branding2 = {
   photo: sydneyMeza,
   name: "Sydney Meza",
   year: 26,
-  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
-  github: "https://github.com/eirik64",
+  linkedin: "",
+  github: "",
   email: "sydney_meza@brown.edu",
   position: "Website Development",
   color: "#fffba0"
@@ -142,10 +131,6 @@ function TeamComponent() {
       <div className="team-section">
       <div className="team-row">{allMembers}</div>
       </div>
-      {/* <div className="team-row">{cordMembers}</div>
-            <div className="team-row">{communityMembers}</div>
-            <div className="team-row">{mentorMembers}</div>
-            <div className="team-row">{brandingMembers}</div> */}
     </div>
   );
 }

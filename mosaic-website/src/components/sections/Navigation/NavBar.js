@@ -60,12 +60,6 @@ function NavBar() {
     }
   };
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, [prevScrollPos, visible, handleScroll]);
-
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
 
@@ -200,7 +194,7 @@ function NavBar() {
                   to="mentorship"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-100}
                   duration={500}
                   onClick={() => {
                     setIsNavExpanded(!isNavExpanded);
