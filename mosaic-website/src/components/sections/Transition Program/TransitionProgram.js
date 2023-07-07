@@ -32,22 +32,6 @@ function TransitionProgramComponent() {
       </div>
 
       <div className="flex-full-width different-height">
-        {/* <div className="tp-column">
-          <h3>Who should apply?</h3>
-          <p>
-            This program is geared towards newly admitted, racially
-            underrepresented minority students* who have any interest
-            in computer science, or want to learn more about the field,
-            at any level of experience!
-          </p>
-          <p className="asterik-text">
-            * In computer science, those who identify as Black,
-            African-American, American Indian, Alaskan Native,
-            Hispanic, Latina/o/x, Native Hawaiian, and/or Pacific
-            Islander are considered to be Underrepresented Racial
-            and/or Ethnic Minorities (URMs).
-          </p>
-        </div> */}
         <div className="tp-column">
           <h3>What will students learn during this program?</h3>
           <p>
