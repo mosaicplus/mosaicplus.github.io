@@ -33,24 +33,6 @@ function TransitionProgramComponent() {
       </div>
 
       <div className="flex-full-width different-height">
-        {/* <div className="tp-column">
-          <h3>Who should apply?</h3>
-          <p>
-            This program is geared towards newly admitted, racially
-            underrepresented minority students* who have any interest
-            in computer science, or want to learn more about the field,
-            at any level of experience!
-          </p>
-          <p className="asterik-text">
-            * In computer science, those who identify as Black,
-            African-American, American Indian, Alaskan Native,
-            Hispanic, Latina/o/x, Native Hawaiian, and/or Pacific
-            Islander are considered to be Underrepresented Racial
-            and/or Ethnic Minorities (URMs). HOW TO APPLY: Applications
-            to this year’s program are closed. Applications for the
-            Summer of 2023 will open up later this year.
-          </p>
-        </div> */}
         <div className="tp-column">
           <h3>What will students learn during this program?</h3>
           <p>
@@ -72,12 +54,6 @@ function TransitionProgramComponent() {
 
         <div className="tp-column">
           <h3>Where and when will this program take place?</h3>
-          {/* <p>
-            This program will take place at the end of July and
-            throughout the beginning of August. The program will have
-            two parts: an online prep course and an in-person
-            pre-orientation camp.
-          </p>   */}
           <p>
             For 2023, this program will run for 3-weeks online from Monday July 31 
             until Friday August 18, and 4-days in-person from Tuesday August 22 until 
@@ -91,8 +67,9 @@ function TransitionProgramComponent() {
         <div className="tp-column">
           <h3>How to apply:</h3>
           <p>
-          The Program Application is now open. Applications are due by July 11, 2023.
-          Application URL: https://brown.co1.qualtrics.com/jfe/form/SV_1GMS0qSBk9VbPoi
+          The Program Application for 2023 is now closed. Applications for summer 2024 
+          will open spring or early summer 2024
+          We hope to see you apply!
           </p>
         </div>
       </div>
