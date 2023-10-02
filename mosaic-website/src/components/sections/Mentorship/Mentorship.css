@@ -1,0 +1,43 @@
+#mentorship {
+  background-color: white;
+  text-align: center;
+}
+
+.mentorship-section {
+  width: 100%;
+
+  margin: 0 auto;
+  display: -webkit-flex; /* Safari */
+  display: flex; /* Standard syntax */
+}
+
+.mentorship-section .mentor-column {
+  padding: 10px;
+  -webkit-flex: 1; /* Safari */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1; /* Standard syntax */
+  text-align: left;
+}
+
+.mentor-column h3 {
+  color: #18b0c8;
+  font-size: 30px;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 600;
+  margin: 10px;
+  text-align: left;
+}
+
+.mentor-column p {
+    font-size: 21px;
+    margin: 15px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .mentorship-section {
+        flex-direction: column;
+    }
+}
