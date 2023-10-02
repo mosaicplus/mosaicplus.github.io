@@ -13,12 +13,13 @@ function TransitionProgramComponent() {
         <div className="tp-column">
           <p className="body-text">
             The Mosaic+ Transition Program is a year-long mentorship
-            and peer-support program that welcomes newly admitted
-            underrepresented minority students to Brown University’s
-            Computer Science department. The program begins with an
-            online summer course, followed by an activity-packed
-            pre-orientation program during the last week of summer,
-            just before the first semester of the academic year.
+            and peer-support program that welcomes newly admitted 
+            students to learn more about computer science,
+            with an emphasis on interracial understanding and community building.
+            The program helps students identify and mitigate issues enountered by 
+            minority students at a predominantly white institutions, and learn 
+            about the resources at the University and the CS department. No prior 
+            computer science experience is necessary. 
             Students will be exposed to an exciting mix of technical,
             community-oriented activities and tasks to help prepare
             them for the rigors of computer science at Brown
@@ -68,7 +69,7 @@ function TransitionProgramComponent() {
           <h3>How to apply:</h3>
           <p>
           The Program Application for 2023 is now closed. Applications for summer 2024 
-          will open spring or early summer 2024
+          will open spring or early summer 2024.
           We hope to see you apply!
           </p>
         </div>
