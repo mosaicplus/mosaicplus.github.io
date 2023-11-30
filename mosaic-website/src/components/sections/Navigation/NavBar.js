@@ -34,17 +34,17 @@ function NavBar() {
   const [bgColor, setBgColor] = useState("transparent");
   const [borderSize, setBorderSize] = useState("0px");
 
-  const handleScroll = debounce(() => {
-    const currentScrollPos = window.pageYOffset;
+  // const handleScroll = debounce(() => {
+  //   const currentScrollPos = window.pageYOffset;
 
-    setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 30) ||
-        currentScrollPos < 1100
-    );
+  //   setVisible(
+  //     (prevScrollPos > currentScrollPos &&
+  //       prevScrollPos - currentScrollPos > 30) ||
+  //       currentScrollPos < 1100
+  //   );
 
-    setPrevScrollPos(currentScrollPos);
-  }, 100);
+  //   setPrevScrollPos(currentScrollPos);
+  // }, 100);
 
   const listenScrollEvent = (event) => {
     if (window.scrollY < 800) {

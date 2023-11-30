@@ -15,9 +15,11 @@ import kamrynWalker from "../../../content/graphics/kamryn_walker.JPG";
 import nicoleSanchez from "../../../content/graphics/nicole_sanchez.jpg";
 import jordanStornelli from "../../../content/graphics/jordan_stornelli.jpg";
 import sydneyMeza from "../../../content/graphics/sydney_meza.jpg";
-import joshuaOkwaning from "../../../content/graphics/no_photo.jpg";
-import madelynMoore from "../../../content/graphics/no_photo.jpg";
-
+import joshuaOkwaning from "../../../content/graphics/josh_image.jpeg";
+import madelynMoore from "../../../content/graphics/madelyn_image.jpeg";
+import anikaMahns from "../../../content/graphics/anika_image.jpeg";
+import astridMoreno from "../../../content/graphics/astrid_img.jpeg";
+import diorWillaims from "../../../content/graphics/dior_image.jpeg";
 
 
 import "./Team.css";
@@ -108,11 +110,44 @@ const branding2 = {
   name: "Sydney Meza",
   year: 26,
   linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
-  github: "https://github.com/eirik64",
+  github: "https://github.com/sydneymmeza",
   email: "sydney_meza@brown.edu",
   position: "Website Development",
   color: "#fffba0"
 };
+
+const financial = {
+  photo: astridMoreno,
+  name: "Astrid Moreno-Sanabria",
+  year: 26,
+  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
+  github: "https://github.com/eirik64",
+  email: "astrid_moreno-sanabria@brown.edu",
+  position: "Finance Chair",
+  color: "#fffba0",
+};
+
+const firstyear1 = {
+  photo: diorWillaims,
+  name: "Dior Williams",
+  year: 26,
+  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
+  github: "https://github.com/eirik64",
+  email: "astrid_moreno-sanabria@brown.edu",
+  position: "First Year Liaison",
+  color: "#fffba0",
+};
+const firstyear2 = {
+  photo: anikaMahns,
+  name: "Anika Mahns",
+  year: 26,
+  linkedin: "https://www.linkedin.com/in/erick-lerena-872330191/",
+  github: "https://github.com/eirik64",
+  email: "astrid_moreno-sanabria@brown.edu",
+  position: "First Year Liaison",
+  color: "#fffba0",
+};
+
 
 function mapper(item) {
   return item.map((item, index) => (
@@ -129,6 +164,9 @@ const allMembers = mapper([
   mentorCord,
   branding1,
   branding2,
+  financial,
+  firstyear1,
+  firstyear2,
 ]);
 
 function TeamComponent() {

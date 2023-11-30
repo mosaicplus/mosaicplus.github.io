@@ -7,6 +7,7 @@ import EventsComponent from "./components/sections/Events/Events";
 import MentorshipComponent from "./components/sections/Mentorship/Mentorship";
 import TransitionProgramComponent from "./components/sections/Transition Program/TransitionProgram";
 import ContactComponent from "./components/sections/Contact/Contact";
+import InternshipComponent from "./components/sections/Internships/Internships";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <TeamComponent />
         <TransitionProgramComponent />
         <MentorshipComponent />
+        <InternshipComponent/>
         <ContactComponent />
       </div>
     </div>
