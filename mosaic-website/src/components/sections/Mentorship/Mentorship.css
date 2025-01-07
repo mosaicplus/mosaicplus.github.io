@@ -1,43 +1,106 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
 #mentorship {
-  background-color: white;
+  padding: 20px;
+  background: linear-gradient(120deg, #f0f4fc, #e6f7fa);
   text-align: center;
+  border-radius: 15px;
 }
 
-.mentorship-section {
+
+.mentorship-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mentor-image {
+  flex: 1;
+}
+
+.mentor-photo {
   width: 100%;
+  max-width: 600px;
 
-  margin: 0 auto;
-  display: -webkit-flex; /* Safari */
-  display: flex; /* Standard syntax */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.mentorship-section .mentor-column {
-  padding: 10px;
-  -webkit-flex: 1; /* Safari */
-  -ms-flex: 1; /* IE 10 */
-  flex: 1; /* Standard syntax */
-  text-align: left;
+.mentor-description {
+  flex: 2;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
 }
 
-.mentor-column h3 {
-  color: #18b0c8;
-  font-size: 30px;
-  font-family: "neue-haas-grotesk-display", sans-serif;
-  font-weight: 600;
-  margin: 10px;
-  text-align: left;
+.mentorship-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
-.mentor-column p {
-    font-size: 21px;
-    margin: 15px;
+.mentorship-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.mentorship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
 
+.mentorship-card h3 {
+  font-size: 1.5rem;
+  color: #005c91;
+  margin-bottom: 10px;
+}
+
+.mentorship-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
 
 @media only screen and (max-width: 800px) {
+  .mentorship-intro {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .mentorship-section {
-        flex-direction: column;
-    }
+  .mentor-description {
+    padding-top: 20px;
+  }
+
+  .mentorship-details {
+    flex-direction: column;
+  }
+}
+
+.mentor-photo-slider {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 3 / 2;
+  /* Consistent aspect ratio for the container */
+  overflow: hidden;
+  /* Prevent any overflow from uneven image dimensions */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures images fill the container uniformly */
 }

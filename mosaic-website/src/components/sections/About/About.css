@@ -1,250 +1,146 @@
-.about {
-  margin-top: -40px;
-  text-align: center;
-}
-
-.section-intro {
-  background-color: white;
-  padding-bottom: 20px;
-  /* box-shadow: 0 10px 20px 20px rgba(255, 254, 254, 1); */
-}
-
-.about-section {
-  background-color: white;
-}
-
-.timeline-section {
-  position: relative;
-  z-index: -3;
-  background-color: white;
-}
-
-.timeline {
-  max-width: 1120px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 769px) {
-  .timeline {
-    max-width: 100%;
-    display: none;
-  }
-
-  .timeline-ending {
-    display: none;
-  }
-}
-
-
-.timeline-progress {
-  position: absolute;
-  z-index: -2;
-  width: 6px;
-  height: 100%;
-  background-color: lightgray;
-}
-
-.timeline-progress-bar {
-  will-change: opacity;
-  opacity: 1;
-  position: fixed;
-  left: auto;
-  top: 0px;
-  right: auto;
-  bottom: 50vh;
-  z-index: -1;
-  width: 6px;
-  height: 50vh;
-  background-color: #fff;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#fffba0),
-    color-stop(51%, #e3304e),
-    to(#641cb5)
-  );
-  background-image: linear-gradient(
-    180deg,
-    #fffba0,
-    #e3304e 51%,
-    #641cb5
-  );
-}
-
-/* .timeline:before {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    content: "";
-    width: 10px;
-    background-color: black;
-    left: 40px;
-    margin-left: -1.5px;
-    left: 50%;
-    border-radius: 10px;
-} */
-
-.timeline > li:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
-.timeline-item {
-  position: relative;
-  z-index: -1;
-  display: -ms-grid;
+.horizontal-timeline {
   display: grid;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  -ms-grid-columns: 1fr 180px 1fr;
-  grid-template-columns: 1fr 180px 1fr;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  /* Space between boxes */
+  padding: 20px;
 }
 
-.timeline-right {
-  will-change: opacity;
-  opacity: 1;
+
+.section-header {
+  display: flex;
+  /* Enables flexible alignment */
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically (if needed) */
+  text-align: center;
+  /* Ensures text is centered */
+  margin-bottom: 20px;
+  /* Adds spacing below the title */
+  width: 100%;
+  /* Ensures it spans the full width of the container */
+}
+
+.section-header h1 {
+  font-size: 36px;
+  /* Adjust size for visibility */
+  font-weight: bold;
+  /* Emphasizes the title */
+  color: #333;
+  /* Matches the overall color scheme */
+  margin: 0;
+  /* Removes default margin */
+}
+
+.horizontal-timeline-item {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 500px;
+  /* Uniform height for all boxes */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 .timeline-image img {
+  width: 100%;
   border-radius: 10px;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  max-height: 200px;
+  /* Restricts image height */
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
-.timeline-left {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  text-align: right;
-}
-
-.timeline-left h3 {
-  font-size: 48px;
-  position: sticky;
-  top: 50vh;
-}
-
-.timeline-right h4 {
-  font-size: 28px;
-}
-
-.timeline-center {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.timeline-text {
+  flex-grow: 1;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.timeline-circle {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 50vh;
-  height: 20px;
-  /* max-height: 15px;
-  max-width: 15px;
-  min-height: 15px;
-  min-width: 15px; */
-  /* border-radius: 100%;
-  background-color: black;
-  box-shadow: 0 0 0 8px white; */
-  will-change: background;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  /* Needed for shadow positioning */
+  padding: 10px;
+  /* Additional padding for a cleaner layout */
 }
 
-@media screen and (max-width: 769px) {
-  .timeline-circle {
-    display: none;
-  }
+.timeline-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  /* Light shadow-like background */
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* Inner shadow effect */
+  border-radius: 10px;
+  /* Match the box's rounded corners */
+  z-index: 0;
+  /* Place it behind the text */
 }
 
-.timeline-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 50vh;
-  color: black;
-  font-size: 48px;
-  line-height: 1.2;
-  font-weight: bold;
-}
-
-.timeline-right h4 {
-  font-size: 32px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.timeline-body {
-  text-align: left;
-}
-.timeline-body p {
-  font-size: 18px;
-}
-
-.about-text {
-  text-align: left;
+.timeline-text h3 {
   font-size: 24px;
-  background-color: white;
+  margin: 10px 0 5px;
+  line-height: 1.3;
+  position: relative;
+  /* Ensure it appears above the shadow */
+  z-index: 1;
+}
+
+.timeline-text h4 {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0 10px;
+  font-weight: bold;
+  position: relative;
+  /* Ensure it appears above the shadow */
+  z-index: 1;
+}
+
+.timeline-text p {
+  font-size: 16px;
   line-height: 1.6;
-  margin: 0px;
-  padding: 0px;
-}
-
-.special-text {
-  font-weight: bold;
-  background: rgb(162,35,225);
-  background: -moz-linear-gradient(90deg, rgba(162,35,225,1) 0%, rgba(255,251,160,1) 93%);
-  background: -webkit-linear-gradient(90deg, rgba(162,35,225,1) 0%, rgba(255,251,160,1) 93%);
-  background: linear-gradient(90deg, rgba(162,35,225,1) 0%, rgba(255,251,160,1) 93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-.timeline-ending {
-  background-color: white;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.timeline-ending p {
-  font-size: 36px;
-  font-weight: bold;
+  color: #555;
   margin: 0;
+  overflow-y: auto;
+  /* Enables vertical scrolling */
+  padding: 10px;
+  word-wrap: break-word;
+  white-space: normal;
+  flex-grow: 1;
+  /* Ensures the text fills available vertical space */
+  background: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent white background */
+  border-radius: 10px;
+  /* Match the design aesthetic */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Light drop shadow */
+  z-index: 1;
+  /* Ensure it appears above the background shadow */
 }
 
-.asterik-text {
-  font-size: 12px;
+.timeline-text p::-webkit-scrollbar {
+  width: 8px;
+}
+
+.timeline-text p::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px;
+}
+
+.horizontal-timeline::-webkit-scrollbar {
+  height: 10px;
+}
+
+.horizontal-timeline::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 10px;
 }

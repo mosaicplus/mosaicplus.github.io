@@ -1,59 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { gapi } from "gapi-script";
-import EventItemComponent from "./EventItem";
-import moment from "moment";
+import React from "react";
 
 function EventsComponent() {
-  const [events, setEvents] = useState([]);
-
-  const getEvents = (calendarID, apiKey) => {
-    function initiate() {
-      gapi.client
-        .init({
-          apiKey: apiKey,
-        })
-        .then(function () {
-          return gapi.client.request({
-            path: `https://www.googleapis.com/calendar/v3/calendars/${calendarID}/events`,
-          });
-        })
-        .then(
-          (response) => {
-            let events = response.result.items.filter(
-              (event) => new Date(event.end.dateTime) > new Date()
-            );
-            console.log(events);
-            // console.log(new Date(new Date(events[0].start.dateTime).toUTCString()).toISOString())
-            setEvents(events);
-          },
-          function (err) {
-            return [false, err];
-          }
-        );
-    }
-    gapi.load("client", initiate);
-  };
-
-  useEffect(() => {
-    const cal_events = getEvents(
-      process.env.REACT_APP_CALENDAR_ID,
-      process.env.REACT_APP_GOOGLE_API_KEY
-    );
-    setEvents(cal_events);
-  }, []);
-
   return (
     <div className="events">
       <div className="section-header blue-header">
-        <h1> Upcoming Events</h1>
+        <h1 className="text-2xl font-bold mb-6">Upcoming Events</h1>
       </div>
-
-      <div>
-        {events?.map((event) => (
-          <div key={event.id} className="event flex justify-center">
-            <EventItemComponent event={event}></EventItemComponent>
-          </div>
-        ))}
+      <div className="events-calendar">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=c_5f871adfdae133ed3ca672d94659c62b577576c001263d216ad5df0af7fbdc1d%40group.calendar.google.com&ctz=America%2FNew_York"
+          style={{ border: "1px solid #ccc", width: "100%", height: "600px" }}
+          frameBorder="0"
+          scrolling="no"
+          title="Google Calendar"
+        ></iframe>
       </div>
     </div>
   );

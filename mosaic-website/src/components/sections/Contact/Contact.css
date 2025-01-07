@@ -1,7 +1,6 @@
 .contact {
   text-align: center;
   padding-bottom: 20px;
-  background-color: white;
 }
 
 .form-left {
@@ -22,6 +21,7 @@ label {
   width: 100%;
   text-align: center;
 }
+
 .contact-component {
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@ textarea {
 .form-control {
   height: 50px;
   border-style: solid;
-  border-width: 0px;
+  border-width: 5px;
   border-color: transparent;
   border-radius: 4px;
   background-color: #f0f4f8;
@@ -49,20 +49,19 @@ textarea {
   margin-bottom: 10px;
   color: #333333;
 }
+
 .form-control:focus-visible {
   outline: none;
   box-shadow: none;
 }
 
-.form-control::placeholder {
 
-}
 .message {
   height: 100px;
 }
 
 .contact-form {
-  background-color: white;
+
   width: 50%;
 }
 
@@ -73,6 +72,7 @@ textarea {
 textarea {
   font-family: Roobert, sans-serif;
 }
+
 input[type="text"] {
   font-family: Roobert, sans-serif;
 }
@@ -81,17 +81,16 @@ input[type="text"] {
   font-size: 24px;
   font-weight: 600;
   border-radius: 50px;
-  border: none;
   cursor: pointer;
   font-family: "neue-haas-grotesk-display", sans-serif;
   padding: 10px 20px 10px 20px;
   background-color: white;
   color: #333;
   transition: all 300ms ease;
-  border: 5px solid #ef566f;
+  border: 3px solid black;
 }
 
 .submit-button:hover {
-    background-color: #ef566f;
-    color: white
+  background-color: #ef566f;
+  color: white
 }

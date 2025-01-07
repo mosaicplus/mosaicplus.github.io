@@ -1,91 +1,204 @@
-/* Clear floats after the columns */
-.flex-full-width {
+#transition-program {
   width: 100%;
   margin: 0 auto;
-  display: -webkit-grid; /* Safari */
-  display: grid; /* Standard syntax */
-  /* min-height: 500px; */
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  padding: 40px 20px;
+}
+
+/* Section Header (Original Style Retained) */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Grid Layout for Evenly Sized Blocks */
+.flex-full-width {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: stretch;
+  /* Ensures all blocks are the same height */
+  margin-bottom: 10px;
 }
 
 .tp-column {
-  padding: 10px;
-  -webkit-flex: 1; /* Safari */
-  -ms-flex: 1; /* IE 10 */
-  flex: 1; /* Standard syntax */
-  text-align: left;
-}
-
-.tp-column h3 {
-  font-size: 30px;
-  font-family: "neue-haas-grotesk-display", sans-serif;
-  font-weight: 600;
-  margin: 10px;
-}
-.asterik-text {
-  font-size: 12px !important;
-}
-
-.tp-column p {
-  font-size: 21px;
-}
-
-.tp-column h3 {
-  color: #a223e1;
-}
-
-.tp-photo-cover {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../../../content/photos/pre-o.jpg");
-  background-position: center center;
-  border-radius: 10px;
-}
-.tp-photo {
-  border-radius: 10px;
-  width: 100%;
-  object-fit: contain;
-}
-
-.tp-photo-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  min-height: 100%;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 300px;
+  /* Sets uniform height for all blocks */
 }
 
-@media only screen and (max-width: 1000px) {
+.tp-column h3 {
+  font-size: 24px;
+  color: #5e35b1;
+  margin-bottom: 15px;
+}
+
+.tp-column p,
+.tp-column ul li {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.tp-column ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Photo Cover */
+.tp-photo-cover {
+  background-image: url("../../../content/photos/pre-o.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  min-height: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.tp-full-width-apply {
+  grid-column: span 2;
+  background-color: #5e35b1;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  /* Reduced padding */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Slightly lighter shadow */
+}
+
+.tp-full-width-apply h3 {
+  font-size: 24px;
+  /* Reduced font size */
+  margin-top: 20px;
+  /* Reduced margin */
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.tp-full-width-apply p {
+  font-size: 16px;
+  /* Reduced font size */
+  line-height: 1.4;
+  /* Tighter line height */
+  color: #f1f1f1;
+}
+
+/* Enhanced List Styles */
+.enhanced-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.enhanced-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffba0;
+
+  border-left: 5px solid #5e35b1;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  color: #444;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-icon {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #5e35b1;
+}
+
+.enhanced-list li:hover {
+  background-color: #5e35b1;
+  color: #fff;
+  transform: scale(1.02);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
   .flex-full-width {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    grid-auto-rows: 1fr;
   }
 
-  .different-height {
-    grid-auto-rows: auto;
-    grid-template-rows: auto !important;
-  }
-  .tp-column {
-    grid-column: 2/ -1;
+  .tp-full-width-apply {
+    grid-column: auto;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .flex-full-width {
-    grid-auto-rows: auto;
-    grid-template-rows: auto !important;
+/* Pulse Up Animation */
+@keyframes pulse-up {
+  0% {
+    transform: translateY(0);
   }
 
-  .different-height {
-    grid-auto-rows: auto;
-    grid-template-rows: auto !important;
-  }
-  .tp-column {
-    grid-column: 2/ -1;
+  50% {
+    transform: translateY(-5px);
   }
 
-  .tp-photo-cover {
-    min-height: 300px;
+  100% {
+    transform: translateY(0);
   }
+}
+
+/* Add Hover Effects to All Interactive Sections */
+.tp-column:hover,
+.tp-photo-cover:hover,
+.tp-photo-cover-second:hover,
+.tp-full-width-apply:hover {
+  animation: pulse-up 0.6s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  /* Hover upward */
+}
+
+/* Enhanced List Hover Effects (Hover-Up Instead of Scale) */
+.enhanced-list li:hover {
+  background-color: #5e35b1;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse-up 0.6s ease-in-out;
+}
+
+/* Section Header Hover Effect */
+.section-header:hover {
+  animation: pulse-up 0.6s ease-in-out;
+  transform: translateY(-5px);
+  /* Hover upward */
+  color: #5e35b1;
+  /* Optional color change on hover */
+}
+
+/* Additional Photo Hover Effect */
+.additional-photo:hover {
+  animation: pulse-up 0.6s ease-in-out;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

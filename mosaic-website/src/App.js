@@ -14,8 +14,8 @@ function App() {
       <NavBar />
       <LandingComponent />
       <div className="main-text">
-        <EventsComponent />
         <AboutComponent />
+        <EventsComponent />
         <TeamComponent />
         <TransitionProgramComponent />
         <MentorshipComponent />

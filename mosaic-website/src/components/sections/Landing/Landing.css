@@ -1,22 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 .landing {
-  background-color: white;
+  background-image: linear-gradient(to top, #C70039);
   padding-bottom: 20px;
 }
+
 .landing-container {
   position: relative;
 }
 
 
-
-
 .hero-text {
   color: white;
   z-index: 3;
-  top: 50%;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   width: 80%;
   text-align: center;
   /* background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgb(35, 35, 35) 100%); */
@@ -27,18 +27,90 @@
   width: 60%;
   margin: 0 auto;
 }
-.hero-heading h1 {
-  margin: 0px;
-  font-size: 80px;
-  /* font-family: Diatype-Bold; */
-  font-family: "neue-haas-grotesk-display", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
+.hero-heading h1 {
+  margin: 0;
+  font-size: 70px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-style: normal;
+  white-space: nowrap;
+  /* Force text to stay on one line during typing */
+  overflow: hidden;
+  /* Hide overflowing text during typing */
+  display: inline-block;
+  /* Required for cursor effect */
+  border-right: 3px solid black;
+  /* Cursor effect */
+  animation: typewriter 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+}
+
+/* Keyframe for typing effect */
+@keyframes typewriter {
+  0% {
+    width: 0;
+    /* Start with no visible text */
+  }
+
+  100% {
+    width: 100%;
+    /* Reveal full text */
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+/* Wrapping on resize */
+@media screen and (max-width: 768px) {
+  .hero-heading h1 {
+    white-space: normal;
+    /* Allow text to wrap when the screen width is small */
+  }
+}
+
+/* Subheading Slide-In Effect */
 .hero-subheading p {
-  margin: 0px;
-  font-size: 35px;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 550;
+  opacity: 0;
+  /* Start invisible */
+  transform: translateX(-100%);
+  /* Start off-screen to the left */
+  animation: slideIn 1.5s ease-out forwards;
+  animation-delay: 3.5s;
+  /* Delays until the heading finishes typing */
+}
+
+
+
+/* Subheading Slide-In Keyframes */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -61,7 +133,7 @@
   text-align: center;
   width: 100%;
   position: relative;
-  
+
 }
 
 .each-slide ::before {
@@ -72,7 +144,8 @@
   width: 100%;
   height: 100%;
   /* background-color: rgb(1, 34, 57); */
-  opacity: 0.2; /* adjust the opacity as you want */
+  opacity: 0.2;
+  /* adjust the opacity as you want */
   background-color: #0c1c26;
 }
 
