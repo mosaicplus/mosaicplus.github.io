@@ -1,18 +1,19 @@
 .events {
-  background-color: white;
+
   padding-bottom: 50px;
   margin: 0px;
   text-align: center;
 }
 
 .event {
-display: inline-block;
+  display: inline-block;
   margin: auto;
   max-width: 50%;
 }
+
 .event_item {
   padding: 20px 20px 20px 20px;
-  background-color: white;
+
   transition: all 200ms ease;
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -21,10 +22,10 @@ display: inline-block;
 }
 
 .event_item h3 {
-    font-size: 30px;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight:  600;
-    margin:10px;
+  font-size: 30px;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 600;
+  margin: 10px;
 }
 
 
@@ -62,6 +63,7 @@ display: inline-block;
   pointer-events: none;
   display: block;
 }
+
 .event_date {
   margin-right: 0px;
   padding: 0 20px;

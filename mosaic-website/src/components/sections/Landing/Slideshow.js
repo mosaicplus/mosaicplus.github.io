@@ -1,12 +1,18 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import bgImage from "../../../content/photos/timeline3.jpg";
-import bgImage2 from "../../../content/photos/timeline4.jpg";
-import bgImage3 from "../../../content/photos/timeline2.jpg";
+import bgImage from "../../../content/photos/timeline5.jpg";
+import bgImage2 from "../../../content/photos/timeline6.jpg";
+import bgImage3 from "../../../content/photos/timeline7.jpg";
+import bgImage4 from "../../../content/photos/timeline.jpg";
+import bgImage5 from "../../../content/photos/timeline9.jpg";
+import bgImage6 from "../../../content/photos/timeline10.jpg";
+import bgImage7 from "../../../content/photos/timeline11.jpg";
+import bgImage8 from "../../../content/photos/timeline8.JPG";
+
 import "./Landing.css";
 
-const slideImages = [bgImage, bgImage2, bgImage3];
+const slideImages = [bgImage5, bgImage6, bgImage7, bgImage, bgImage8, bgImage2, bgImage3, bgImage4];
 
 const properties = {
   duration: 5000,
@@ -16,7 +22,7 @@ const properties = {
   arrows: false,
   pauseOnHover: false,
   easing: "ease",
-  onChange: (oldIndex, newIndex) => {},
+  onChange: (oldIndex, newIndex) => { },
 };
 
 const SlideShow = () => {
@@ -41,6 +47,31 @@ const SlideShow = () => {
                 style={{ backgroundImage: `url(${slideImages[2]})` }}
               ></div>
             </div>
+            <div className="each-slide">
+              <div
+                style={{ backgroundImage: `url(${slideImages[3]})` }}
+              ></div>
+            </div>
+            <div className="each-slide">
+              <div
+                style={{ backgroundImage: `url(${slideImages[4]})` }}
+              ></div>
+            </div>
+            <div className="each-slide">
+              <div
+                style={{ backgroundImage: `url(${slideImages[5]})` }}
+              ></div>
+            </div>
+            <div className="each-slide">
+              <div
+                style={{ backgroundImage: `url(${slideImages[6]})`, backgroundPosition: "center" }}
+              ></div>
+            </div>
+            <div className="each-slide">
+              <div
+                style={{ backgroundImage: `url(${slideImages[7]})`, backgroundPosition: "center" }}
+              ></div>
+            </div>
           </Slide>
         </div>
 
@@ -50,7 +81,7 @@ const SlideShow = () => {
           </div>
           <div className="hero-subheading">
             <p>
-              Created to foster{" "}
+              created to foster{" "}
               <span className="yellow-highlight">community</span>,
               inspire <span className="red-highlight">innovation</span>
               , and provide{" "}

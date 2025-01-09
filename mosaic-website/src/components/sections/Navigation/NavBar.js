@@ -40,7 +40,7 @@ function NavBar() {
     setVisible(
       (prevScrollPos > currentScrollPos &&
         prevScrollPos - currentScrollPos > 30) ||
-        currentScrollPos < 1100
+      currentScrollPos < 1100
     );
 
     setPrevScrollPos(currentScrollPos);
@@ -125,7 +125,7 @@ function NavBar() {
           </button> */}
 
           <div className="mobile-menu">
-          <Hamburger toggled={isNavExpanded} toggle={setIsNavExpanded} />
+            <Hamburger toggled={isNavExpanded} toggle={setIsNavExpanded} />
           </div>
           <nav
             className={
@@ -133,26 +133,13 @@ function NavBar() {
             }
             style={{
               backgroundColor: bgColor,
-              top: isNavExpanded? "0" : "-100%",
-              transitionDelay: isNavExpanded? "0s" : "0s",
+              top: isNavExpanded ? "0" : "-100%",
+              transitionDelay: isNavExpanded ? "0s" : "0s",
             }}
-            
+
           >
             <ul className="nav-menu">
-              <li className="nav-menu-item">
-                <Link
-                  to="events"
-                  spy={true}
-                  smooth={true}
-                  offset={-150}
-                  duration={500}
-                  onClick={() => {
-                    setIsNavExpanded(!isNavExpanded);
-                  }}
-                >
-                  Events
-                </Link>
-              </li>
+
               <li className="nav-menu-item">
                 <Link
                   to="about"
@@ -169,6 +156,20 @@ function NavBar() {
               </li>
               <li className="nav-menu-item">
                 <Link
+                  to="events"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
+                >
+                  Events
+                </Link>
+              </li>
+              <li className="nav-menu-item">
+                <Link
                   to="team"
                   spy={true}
                   smooth={true}
@@ -181,6 +182,7 @@ function NavBar() {
                   Team
                 </Link>
               </li>
+
               <li className="nav-menu-item">
                 <Link
                   to="transition-program"

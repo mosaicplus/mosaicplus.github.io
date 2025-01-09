@@ -1,24 +1,31 @@
 @import url("https://use.typekit.net/hbu1pct.css");
 
 
-html,body{
+html,
+body {
   overflow-x: hidden;
 }
 
 body {
-  /* background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
+  background-image: linear-gradient(to top, #FF5733, #C70039);
+  /* Gradient background */
   font-family: "neue-haas-grotesk-text", sans-serif;
   font-weight: 500;
   font-style: normal;
 
-  /* background-color: #e1e0dd; */
-  background-color: white;
+  background-attachment: fixed;
+  /* Ensures the background stays in place when scrolling */
+  background-size: cover;
+  /* Makes the gradient cover the entire viewport */
+  margin: 0;
+  /* Removes default body margin */
+  color: black;
+  /* Adjust text color for readability */
 }
-#transition-program {
-  background-color: white;
-}
+
+
 .body-text {
-  background-color: white;
+
   margin: 0;
 }
 
@@ -27,17 +34,20 @@ body {
 }
 
 @font-face {
-  font-family: "Medium"; /*Can be any text*/
+  font-family: "Medium";
+  /*Can be any text*/
   src: url("./content/fonts/F37HybridTrial-Regular.otf");
 }
 
 @font-face {
-  font-family: "ForLinks"; /*Can be any text*/
+  font-family: "ForLinks";
+  /*Can be any text*/
   src: url("./content/fonts/Author-Semibold.woff");
 }
 
 @font-face {
-  font-family: "Custom-Bold"; /*Can be any text*/
+  font-family: "Custom-Bold";
+  /*Can be any text*/
   src: url("./content/fonts/ABCDiatype-Bold-Trial.woff");
 }
 
@@ -58,6 +68,7 @@ button {
   border-radius: 4px;
   font-weight: 600;
 }
+
 .test {
   position: absolute;
   top: 0;
@@ -116,6 +127,7 @@ ul.indicators {
   margin-top: 20px;
 
 }
+
 .section-header h1 {
   text-align: center;
   font-size: 40px;
@@ -129,14 +141,12 @@ ul.indicators {
 }
 
 .team-photo {
-  clip-path: polygon(
-    50% 0,
-    100% 25%,
-    100% 75%,
-    50% 100%,
-    0 75%,
-    0 25%
-  );
+  clip-path: polygon(50% 0,
+      100% 25%,
+      100% 75%,
+      50% 100%,
+      0 75%,
+      0 25%);
 }
 
 svg {
@@ -147,13 +157,14 @@ svg {
   margin-left: 10%;
   margin-right: 10%;
 }
+
 ul li {
   display: inline-block;
   padding: 10px;
   font-size: 20px;
 }
 
-.each-slide > div {
+.each-slide>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,7 +216,7 @@ ul li {
   margin: 0;
 }
 
-.react-slideshow-container + div.indicators > div:last-of-type {
+.react-slideshow-container+div.indicators>div:last-of-type {
   margin-right: 10px;
 }
 
@@ -216,7 +227,7 @@ h5 {
   line-height: 1;
 }
 
-.each-slide > div {
+.each-slide>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -266,10 +277,9 @@ h5 {
 }
 
 .purple-header {
-  background-color: #a223e1;
+  background-color: #5e35b1;
 }
 
 #transition-program {
   text-align: center;
 }
-
