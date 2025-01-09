@@ -1,35 +1,29 @@
 import React, { useState, useRef } from "react";
-import emailjs from "emailjs-com";
 import "./Contact.css";
 
 function ContactComponent() {
-  const [formStatus, setFormStatus] = React.useState("Send");
-
+  const [formStatus, setFormStatus] = useState("Send");
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setFormStatus("Sending...");
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          setFormStatus("Success");
-          e.target.reset();
-          setTimeout(function () {
-            //your code to be executed after 1 second
-            setFormStatus("Send");
-          }, 2000);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+
+    const formData = new FormData(form.current);
+    const data = Object.fromEntries(formData.entries());
+
+    // Construct the mailto link
+    const mailtoLink = `mailto:mosaic-plus@brown.edu?subject=New Message from ${encodeURIComponent(
+      data.user_name
+    )}&body=${encodeURIComponent(
+      `Name: ${data.user_name}\nEmail: ${data.user_email}\n\nMessage:\n${data.message}`
+    )}`;
+
+    // Open the mail client
+    window.location.href = mailtoLink;
+
+    // Reset form
+    form.current.reset();
+    setFormStatus("Send");
   };
 
   return (
@@ -67,11 +61,11 @@ function ContactComponent() {
           </button>
         </form>
       </div>
-
       <div>
-        <p className="contact-header">Our lead team can also be reached at mosaic.plus.brown@gmail.com.</p>
+        <p className="contact-header">
+          Our lead team can also be reached at mosaic-plus@brown.edu
+        </p>
       </div>
-
     </div>
   );
 }
